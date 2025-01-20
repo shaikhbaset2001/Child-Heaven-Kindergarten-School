@@ -1,0 +1,60 @@
+/* General Styles reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Shared styles */
+.section-title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: quicksand;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.bg-color-orange {
+    background-color: rgb(254, 163, 1);
+}
+.bg-color-skyblue {
+    background-color: rgb(1, 172, 253);
+}
+.bg-color-purple {
+    background-color: rgb(93, 88, 239);
+}
+.bg-color-lightgreen {
+    background-color: rgb(149, 178, 38);
+}
+.color-orange {
+    color: rgb(254, 163, 1);
+}
+.color-skyblue {
+    color: rgb(1, 172, 253);
+}
+/* Header Nav */
+nav {
+    display: flex;
+    justify-content: space-around   ;
+    align-items: center;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-family: quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0%;
+    color: rgb(17, 17, 17);
+}
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link a {
+    font-family: quicksand;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    margin: 0 1rem;
+}
