@@ -3,66 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Child Heaven Kindergarten School</title>
 </head>
 <body>
     <header>
-        <nav class="header=nav">
+        <nav class="header-nav">
             <div class="nav-logo">
                 <img src="images/logo.png" alt="Child Heaven Kindergarten School">
                 <h1 class="school-name">Child Heaven</h1>
             </div>
             <div class="nav-link">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#banner">Facilities</a>
-                <a href="#curriculum">Admission</a>
+                <a class="color-orange text-decoration" href="#">Home</a>
+                <a class="color-skyblue text-decoration" href="#about">About</a>
+                <a class="text-decoration" href="#banner">Facilities</a>
+                <a class="text-decoration" href="#curriculum">Admission</a>
             </div>
-            <button>Contact</button>
+            <button class="bg-color-orange">Contact</button>
         </nav>
-        <div class="banner" id="banner">
-            <div class="welcome-massage">
-                <h3 class="slogan"><span class="color-orange">Empowering</span> <span style="color: rgb(17, 17, 17);"></span>students from small age <span class="color-skyblue">towards vision</span></h3>
-                <p class="slogan-description">Child Heaven Kindergarten School is dedicated to providing a nurturing and stimulating environment for young children. Our mission is to foster a love of learning and help each child reach their full potential.</p>
-                <button class="enroll">Enroll Now</button>
+        <div class="hero" id="banner">
+            <div class="welcome-text">
+                <h2><span class="color-orange">Empowering</span> <span style="color: rgb(17, 17, 17);"></span>students from small age <span class="color-skyblue">towards vision</span></h2>
+                <p>Child Heaven Kindergarten School is dedicated to providing a nurturing and stimulating environment for young children. Our mission is to foster a love of learning and help each child reach their full potential.</p>
+                <button class="bg-color-black">Enroll Now</button>
             </div>
-            <div class="banner-image">
-                <img src="images/hero-kids.png" alt="Child Heaven Kindergarten School">
-        </div>
+
+            <img src="images/hero-kids.png" alt="Child Heaven Kindergarten School">
     </header>
 
     <main>
         <section class="about" id="curriculum">
-            <h2>Standard Curriculum</h2>
+            <h2 class="section-title">Standard Curriculum</h2>
             <div class="curriculum-container">
-                <div class="curriculam-box">
+                <div class="curriculum-box">
                     <img src="images/kinder.png" alt="">
                     <h4>Kinder (3-6) Years</h4>
                     <p>Our kindergarten program focuses on the holistic development of children, fostering their cognitive, social, emotional, and physical growth.</p>
-                    <a href="">Read More</a>
+                    <a class="text-decoration" href="">Read More</a>
                 </div>
                 <div class="curriculum-box">
                     <img src="images/elementary.png" alt="">
                     <h4>Elementary School</h4>
                     <p>Our elementary school curriculum is designed to build a strong foundation in core academic subjects while encouraging creativity and critical thinking.</p>
-                    <a href="">Read More</a>
+                    <a class="text-decoration" href="">Read More</a>
                 </div>
-                <div class="curriculam-box">
+                <div class="curriculum-box">
                     <img src="images/middle.png" alt="">
                     <h4>Middle (10-16) Years</h4>
                     <p>Our middle school program prepares students for high school with a focus on academic excellence, personal growth, and social responsibility.</p>
-                    <a href="">Read More</a>
+                    <a class="text-decoration" href="">Read More</a>
                 </div>
             </div>
-           <div class="slide-button-container">
-            <button class="slide-button"></button>
-            <button class="slide-button"></button>
+           <div class="slide-btn-container">
+            <button class="slide-btn"></button>
+            <button class="slide-btn"></button>
            </div> 
         </section>
 
         <section class="stories">
-            <h3>Our Stories</h3>
+            <h3 class="section-title">Our Stories</h3>
             <article>
                 <img src="" alt="">
                 <h5></h5>
@@ -87,7 +89,7 @@
                     <h6></h6>
                 </div>
             </div>
-            <button>View All</button>
+            <button class="bg-color-black">View All</button>
         </section>
     </main>
 
@@ -102,19 +104,19 @@
         <section>
             <h2 id="about">About School</h2>
             <div class="nav-link">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#curriculum">Facilities</a>
-                <a href="#banner">Admission</a>
+                <a class="text-decoration" href="#">Home</a>
+                <a class="text-decoration" href="#about">About</a>
+                <a class="text-decoration" href="#curriculum">Facilities</a>
+                <a class="text-decoration" href="#banner">Admission</a>
             </div>
         </section>
         <section>
             <h2>Keep in Touch</h2>
             <div class="social-link">
-                <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook"></a>
-                <a href="https://www.dribbble.com"><img src="images/dribble.png" alt="Dribbble"></a>
-                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
-                <a href="https://www.google.com"><img src="images/google+.png" alt=""></a>
+                <a class="text-decoration" href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook"></a>
+                <a class="text-decoration" href="https://www.dribbble.com"><img src="images/dribble.png" alt="Dribble"></a>
+                <a class="text-decoration" href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+                <a class="text-decoration" href="https://www.google.com"><img src="images/google+.png" alt=""></a>
             </div>
         </section>
     </footer>
