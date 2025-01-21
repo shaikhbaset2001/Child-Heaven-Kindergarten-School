@@ -135,14 +135,65 @@ nav button {
 .curriculum-box {
     text-align: center;
     width: 30%;
+    border: 1px solid rgb(17, 17, 17);
+    padding: 2vh 2vw;
 }
+.curriculum-box h4 {
+    font-family: quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.curriculum-box p {
+    font-family: quicksand;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+    margin: 1rem 0;
+}
+.curriculum-box a {
+    font-family: quicksand;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
 .slide-btn-container {
     display: flex;
     justify-content: center;
+    gap: 1rem;
     align-items: center;
-    margin-top: 2rem;
+    width: 8vw;
+    margin: 2rem auto 0 auto;
+}
+
+.slide-btn {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 45%;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
 }
 /* Stories Section */
 .stories {
     background-image: url('images/bg.png');
+    text-align: center;
+}
+.stories-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+.small-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
