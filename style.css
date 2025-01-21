@@ -11,10 +11,29 @@
     box-sizing: border-box;
 }
 /* Shared styles */
+.nav-logo,
+.nav-link a,
+nav button,
+.welcome-text h2,
+.welcome-text p,
+.welcome-text button,
+.curriculum-box h4,
+.curriculum-box p,
+.curriculum-box a,
+.stories-container article h5,
+.stories-container article p,
+.stories-container article a,
+.story-card h5,
+.section-title,
+button,
+.bg-color-black,
+.bg-color-orange,
+.bg-color-skyblue {
+    font-family: quicksand;
+}
 .section-title {
     text-align: center;
     color: rgb(0, 0, 0);
-    font-family: quicksand;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2.25rem;
@@ -62,7 +81,6 @@ nav {
 .nav-logo {
     display: flex;
     align-items: center;
-    font-family: quicksand;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0%;
@@ -74,13 +92,11 @@ nav {
     align-items: center;
 }
 .nav-link a {
-    font-family: quicksand;
     font-size: 1rem;
     font-weight: 500;
     margin: 0 1rem;
 }
 nav button {
-    font-family: quicksand;
     font-size: 1rem;
     font-weight: 500;
     padding: 0.5rem 1.5rem;
@@ -100,19 +116,16 @@ nav button {
     width: 48%;
 }
 .welcome-text h2 {
-    font-family: quicksand;
     font-size: 2rem;
     font-weight: 700;
 }
 .welcome-text p {
-    font-family: quicksand;
     font-size: 1rem;
     font-weight: 500;
     color: rgb(17, 17, 17);
     margin: 1rem 0;
 }
 .welcome-text button {
-    font-family: quicksand;
     font-size: 1rem;
     border: none;
     cursor: pointer;
@@ -139,20 +152,17 @@ nav button {
     padding: 2vh 2vw;
 }
 .curriculum-box h4 {
-    font-family: quicksand;
     font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem 0;
 }
 .curriculum-box p {
-    font-family: quicksand;
     font-size: 1rem;
     font-weight: 500;
     color: rgb(17, 17, 17);
     margin: 1rem 0;
 }
 .curriculum-box a {
-    font-family: quicksand;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
@@ -192,8 +202,14 @@ nav button {
     align-items: center;
     padding: 0 10vw;
 }
-.small-card-container {
-    display: flex;
+.stories-container article {
+    width: 35%;
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.card-container {
+    display: grid;
     justify-content: space-between;
     align-items: center;
 }
