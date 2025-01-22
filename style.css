@@ -30,7 +30,10 @@ nav button,
 button,
 .bg-color-black,
 .bg-color-orange,
-.bg-color-skyblue {
+.bg-color-skyblue,
+ul,
+li,
+a {
     font-family: quicksand;
 }
 
@@ -368,13 +371,116 @@ footer .contact h2 {
 /* Responsive */
 @media screen and (max-width: 768px) {
     /* Hiding things */
-    .school-name,
+    nav .school-name,
     .slide-btn-container,
     .article {
         display: none;
     }
     /* Flex Direction */
-    .hero {
+    .hero,
+    .welcome-text 
+    .about,
+    .stories,
+    .curriculum-container,
+    .curriculum-box,
+    .stories-container,
+    .card-container,
+    footer,
+    footer section {
         flex-direction: column;
+        row-gap: 1rem;
+    }
+    /* Padding */
+    .hero,
+    .about,
+    .stories {
+        padding: 1vh 5vw;
+    }
+    /* Navbar */
+    header {
+        padding: 1vh 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 8vh;
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        margin: 0;
+        padding: 0 0.25vh 5vw;
+    }
+    .nav-link, nav button {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.75rem;
+    }
+    /* Hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome-text {
+        width: 100%;
+        text-align: center;
+    }
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
+    .hero img {
+        width: 20rem;
+        height: 24rem;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero button {
+        font-size: 1rem;
+    }
+    /* Curriculum */
+    .curriculum-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .curriculum-box {
+        width: 100%;
+        padding: 0 2vw;
+    }
+    /* Stories */
+    .stories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .story-card {
+        width: 100%;
+        height: 30vh;
+    }
+    .story-card h6 {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    /* Footer */
+    footer {
+        height: 70vh;
+    }
+    footer section {
+        display: flex;
+        width: 100%;
+        height: 30%;
+    }
+    .footer-about {
+        margin: 0;
+    }
+    footer .contact {
+        text-align: left;
     }
 }
