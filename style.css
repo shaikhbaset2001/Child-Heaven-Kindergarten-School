@@ -4,12 +4,14 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 /* General Styles reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Shared styles */
 .nav-logo,
 .nav-link a,
@@ -31,12 +33,15 @@ button,
 .bg-color-skyblue {
     font-family: quicksand;
 }
+
 .article img,
 .story-card img {
     width: 100%;
     height: 60%;
     border-radius: 5px;
 }
+
+/* Section Titles */
 .section-title {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -45,9 +50,13 @@ button,
     margin-bottom: 2.25rem;
     padding: 1.5vh 10vw;
 }
+
+/* Text Decorations */
 .text-decoration {
     text-decoration: none;
 }
+
+/* Background Colors */
 .bg-color-black {
     background-color: rgb(17, 17, 17);
     color: #fff;
@@ -67,12 +76,16 @@ button,
 .bg-color-lightgreen {
     background-color: rgb(149, 178, 38);
 }
+
+/* Text Colors */
 .color-orange {
     color: rgb(254, 163, 1);
 }
 .color-skyblue {
     color: rgb(1, 172, 253);
 }
+
+/* Buttons */
 .date-button {
     font-size: 0.75rem;
     font-weight: 500;
@@ -84,10 +97,12 @@ button,
     z-index: 10;
     top: -1rem;
 }
+
 /* Header */
 header {
     padding: 1vh 10vw;
 }
+
 /* Header Nav */
 nav {
     display: flex;
@@ -121,6 +136,7 @@ nav button {
     color: #fff;
     cursor: pointer;
 }
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -157,7 +173,7 @@ nav button {
 .curriculum-container {
     display: flex;
     justify-content: space-between;
-    align-items: cnter;
+    align-items: center;
     padding: 0 10vw;
 }
 .curriculum-box {
@@ -205,7 +221,6 @@ nav button {
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
 .slide-btn-container {
     display: flex;
     justify-content: center;
@@ -219,6 +234,7 @@ nav button {
     color: #fff;
     font-size: 1.5rem;
 }
+
 /* Stories Section */
 .stories {
     background: url('images/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -254,7 +270,6 @@ nav button {
     z-index: 10;
     top: -1.5rem;
 }
-
 .stories-container .article h5 {
     font-size: 1.5rem;
     font-weight: 700;
