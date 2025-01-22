@@ -20,16 +20,22 @@ nav button,
 .curriculum-box h4,
 .curriculum-box p,
 .curriculum-box a,
-.stories-container article h5,
-.stories-container article p,
-.stories-container article a,
-.story-card h5,
+.stories-container .article h5,
+.stories-container .article p,
+.stories-container .article a,
+.story-card h6,
 .section-title,
 button,
 .bg-color-black,
 .bg-color-orange,
 .bg-color-skyblue {
     font-family: quicksand;
+}
+.article img,
+.story-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
 }
 .section-title {
     text-align: center;
@@ -67,7 +73,15 @@ button,
 .color-skyblue {
     color: rgb(1, 172, 253);
 }
-
+.date-button {
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+    z-index: 10;
+    top: -1rem;
+}
 /* Header */
 header {
     padding: 1vh 10vw;
@@ -128,7 +142,6 @@ nav button {
 .welcome-text button {
     font-size: 1rem;
     border: none;
-    cursor: pointer;
 }
 .banner img {
     width: 48%;
@@ -171,25 +184,18 @@ nav button {
     transition: color 0.3s ease;
 }
 
-
 .slide-btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    align-items: center;
-    width: 8vw;
-    margin: 2rem auto 0 auto;
+    gap: 10px;
+    margin-top: 20px;
 }
-
 .slide-btn {
-    font-size: 2rem;
-    font-weight: 500;
-    width: 45%;
-    padding: 0.5rem 1.5rem;
     border: none;
+    padding: 10px;
     border-radius: 50%;
     color: #fff;
-    cursor: pointer;
+    font-size: 1.5rem;
 }
 /* Stories Section */
 .stories {
@@ -199,17 +205,83 @@ nav button {
 .stories-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 10vw;
 }
-.stories-container article {
-    width: 35%;
+.stories-container .article {
+    width: 48%;
+    height: 100%;
     border: 1px solid rgb(17, 17, 17);
     border-radius: 5px;
+    flex-direction: column;
+    position: relative;
+}
+.stories-container .article img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+.stories-container .article button {
+    font-size: 1rem;
+    border: none;
+    background: rgb(60, 216, 232);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    position: relative;
+    z-index: 10;
+    top: -1.5rem;
+}
+
+.stories-container .article h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 1rem 0;
+}
+.stories-container .article p {
+    font-size: 1rem;
+    font-weight: 300;
 }
 .card-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+.story-card {
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 5px;
+}
+.story-card h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.story-card p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.story-card a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.story-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+.story-card button {
+    font-size: 0.75rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 1vh 10vw;
 }
